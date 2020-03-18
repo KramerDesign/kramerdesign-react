@@ -1,0 +1,25 @@
+This is a check list for setting up a new simple server website.
+
+Any digital information provided by the customer will be stored inside the customer_supplied folder. The data in this folder needs to remain in it's original form as reference material. Use it by copying the require info to other folders for modification, usage and deployment.
+
+The key changes will be will the new site name.
+
+The new site name suold also be the git branch name in the Simple-Server-App repository, inside of the Simple-Server-App Bitbucket Project.
+
+Name Changes in:
+
+~/packagers.json
+ "name": "carquestthornbury",
+ "deploy": "./scripts/deploy.sh carquestthornbury.ca carquestthornbury 1.0.0"
+ 
+ ~/docker-compose.yml
+  image: 'carquestthornbury:1.0.0'
+  container_name: carquestthornbury-web
+  
+   'traefik.backend=carquestthornbury-web'
+   'traefik.frontend.rule=Host:carquestthornbury.ca,www.carquestthornbury.ca;'
+  
+~/src/server/
+  
+   manifest.json  ** as necessary **
+    

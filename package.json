@@ -1,0 +1,53 @@
+{
+  "name": "designedbykkramer.com",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "bundle": "yarn && rm -rf node_modules/@types/react-native",
+    "start:dev": "parcel ./src/client/index.html -d build -p 3000",
+    "run:server": "yarn build && node build/index.js",
+    "clean": "rm -rf ./build",
+    "build:client": "parcel build src/client/index.tsx --no-cache --public-url /static -d build/static --no-source-maps",
+    "build:server": "parcel build src/server/index.ts --no-cache --public-url /static -d build -t node",
+    "build": "yarn clean && yarn build:client && yarn build:server",
+    "deploy": "./scripts/deploy.sh designedbykkramer.com designedbykkramer 1.0.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {
+    "@koa/cors": "3.0.0",
+    "@types/nodemailer": "^6.1.1",
+    "koa": "2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "3.0.0",
+    "koa-mount": "4.0.0",
+    "koa-router": "7.4.0",
+    "koa-static": "5.0.0",
+    "koa-stream": "0.2.0",
+    "nodemailer": "^6.2.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-router-dom": "4.3.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.1",
+    "styled-components": "4.2.0"
+  },
+  "devDependencies": {
+    "@types/koa": "2.0.48",
+    "@types/koa-mount": "3.0.1",
+    "@types/koa-router": "7.0.40",
+    "@types/koa-static": "4.0.1",
+    "@types/react": "16.8.14",
+    "@types/react-dom": "16.8.4",
+    "@types/react-router-dom": "4.3.2",
+    "@types/semantic-ui": "2.2.7",
+    "@types/styled-components": "4.1.14",
+    "babel-core": "6.26.3",
+    "babel-plugin-root-import": "6.1.0",
+    "parcel-bundler": "1.12.3",
+    "prettier": "1.17.0",
+    "ts-node": "8.1.0",
+    "typescript": "3.4.4"
+  }
+}

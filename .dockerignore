@@ -1,0 +1,13 @@
+node_modules
+scripts
+docs
+dist
+build
+.cache
+.dist
+docker-compose.yml
+Dockerfile
+origianl_assets
+.vscode
+.git
+.env

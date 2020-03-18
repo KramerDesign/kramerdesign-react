@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  shinedev-web:
+    image: 'designedbykkramer:1.0.0'
+    container_name: designedbykkramer-web
+
+    env_file:
+      - ${PWD}/.env
+
+    networks:
+      - proxy
+
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.backend=designedbykkramera-web'
+      - 'traefik.docker.network=proxy_net'
+      - 'traefik.frontend.rule=Host:designedbykkramer.com,www.designedbykkramer.com,designedbykkramer.ca,www.designedbykkramer.ca;'
+      # - 'traefik.frontend.rule=Host:designedbykkramer.com,www.designedbykkramer.com,designedbykkramer.com,www.designedbykkramer.com;'
+      - 'traefik.frontend.entryPoints=http,https'
+      - 'traefik.frontend.redirect=https'
+
+networks:
+  proxy:
+    external:
+      name: proxy_net

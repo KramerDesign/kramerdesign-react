@@ -16,5 +16,7 @@ export const Tile1_T = (props: Props) => {
 const Tile1Styling = styled.div`
     color: red;
     height:100px;
+    background-color: blue;
+
 `
  

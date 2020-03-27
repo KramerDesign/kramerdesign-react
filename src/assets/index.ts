@@ -1,5 +1,5 @@
 import LargeHeader from './large_header.jpg'
-import Logo from './190x191.jpg'
+import Logo from './kdlogo-white.gif'
 import EzOnLotion from './Header_Name_6_500x40.png'
 import SunFun from './300x150_fun_sun.png'
 import GrayWallPaper from './300x150_gray_wp.png'
@@ -15,6 +15,7 @@ import PlayPause from './100x100_video_start_icon.png'
 import AddingLotion from './300x150_add_lotion.png'
 import PatentSmall from './108x150_patent.jpg'
 import PlaceHolder from './place_holder_300x300.png'
+import Tile1Img from './redlip.png'
 
 export * from './favicons'
 
@@ -35,5 +36,6 @@ export {
   AddingLotion,
   PatentSmall,
   PlayPause,
-  PlaceHolder
+  PlaceHolder,
+  Tile1Img
 }

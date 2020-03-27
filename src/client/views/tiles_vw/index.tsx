@@ -96,21 +96,26 @@ const TilesViewContainer = styled.div`
     "T1 T2 T3 T4"
     "T5 T6 T7 T8"
     "T9 T10 T11 T12"
-    "T13 T14 T15 T16"
+    "T13 T14 T15 T16";
 
-  grid-gap: 20px;
-  border: solid red 6px;
-  background: pink;
+    grid-gap: 10px;
+
 `
 
 const TileStyling = styled.div`
-  border-radius: 10px;
+  // border-radius: 10px;
   background-color: lightblue;
-  border: solid red 3px;
+  width: 300px;
+  height: 300px;
+
 `
 
 const TileArea1 = styled.div `
     grid-area: T1;
+    // display:flex;
+    // justify-content: center;
+    // align-items:center;
+
 `
 const TileArea2 = styled.div `
     grid-area: T2;

@@ -5,7 +5,7 @@ import { BrowserRouter, StaticRouter } from 'react-router-dom'
 import { Routes } from '~/src/client/routes'
 import { GlobalStyle } from '~/src/client/styles'
 
-import * as Img from '~/src/assets/scoot'
+import * as Img from '~/src/assets'
  
 type Props = {}
 
@@ -48,11 +48,12 @@ const MaxWidth = styled.div`
   // background-repeat: no-repeat;
   // background-attachment: fixed;
   // background-size: cover;
-  background-color: lightgrey;
+  background-color: black;
 `
 
 const SiteWidth = styled.div`
   // margin-left: auto;
   // margin-right: auto;
   // max-width: 960px;
+  background-color: black;
 `

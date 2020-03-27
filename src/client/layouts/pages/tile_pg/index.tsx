@@ -40,37 +40,37 @@ export class TilePage extends React.Component<Props> {
 
 const LayoutGridContainer = styled.div`
   display:grid;
-  border: solid red 3px;
-  background-color:slategray;
-  grid-template-areas: 
-    'zone1'
-    'zone2'
-    'zone3'
-    'zone4';
+  // border: solid red 3px;
+  background-color:white;
+  // grid-template-areas: 
+  //   'zone1'
+  //   'zone2'
+  //   'zone3'
+  //   'zone4';
 `
 const HeaderStyling = styled.div `
     background-color: green;
-    grid-area: zone1;
+    // grid-area: zone1;
     border: solid pink 3px;
 
 `
 const NavStyling = styled.div `
     background-color: green;
-    grid-area: zone2;
-    border: solid blue 3px;
-    max-width: 960px;
+    // grid-area: zone2;
+    // border: solid blue 3px;
+    // max-width: 960px;
     margin: 1px auto;
 `
 const MainStyling = styled.div `
-    background-color: yellow;
-    grid-area: zone3;
-    border: solid orange 4px;
-    max-width: 960px;
+    // background-color: yellow;
+    // grid-area: zone3;
+    // border: solid orange 4px;
+    // max-width: 960px;
     margin: 1px auto;
 `
 const FooterStyling = styled.div `
     background-color: salmon;
-    grid-area: zone4;
-    max-width: 960px;
+    // grid-area: zone4;
+    // max-width: 960px;
     margin: 1px auto;
 `

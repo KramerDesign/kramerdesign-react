@@ -12,13 +12,10 @@ export class Header extends React.Component<Props> {
       <HeaderView>
         <Logo src={Img.Logo} alt="Designedbykkramer" />
         <Stacked>
-          {/* <NameStyling
-            src={Img.EzOnLotion}
-            alt="Designed by Kkramer Headline"
-          /> */}
+          {}
         </Stacked>
 
-        <PhoneNumberStyling value="705-994-4450" />
+        <PhoneNumberStyling value="705-279-5027" />
       </HeaderView>
     )
   }
@@ -39,12 +36,10 @@ const HeaderView = styled.div`
 `
 
 const Logo = styled.img`
-  max-width: 100%;
+  max-width: 200px;
   max-height: auto;
 
   display: flex;
-  border: solid black 3px;
-  border-radius: 10px;
 
   @media (min-width: 700px) {
     flex-direction: row;

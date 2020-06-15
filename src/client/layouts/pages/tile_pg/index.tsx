@@ -42,11 +42,7 @@ const LayoutGridContainer = styled.div`
   display:grid;
   // border: solid red 3px;
   background-color:white;
-  // grid-template-areas: 
-  //   'zone1'
-  //   'zone2'
-  //   'zone3'
-  //   'zone4';
+
 `
 const HeaderStyling = styled.div `
     background-color: green;

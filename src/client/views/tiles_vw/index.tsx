@@ -91,39 +91,38 @@ export const TilesView = (props: Props) => {
 
 const TilesViewContainer = styled.div`
   display:grid;
-  grid-template-columns: fr fr fr fr;
-  grid-template-areas: 
-    "T1 T2 T3 T4"
-    "T5 T6 T7 T8"
-    "T9 T10 T11 T12"
-    "T13 T14 T15 T16";
-
-    grid-gap: 10px;
-
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:repeat(6, 1fr);
+  grid-auto-rows:200px;
+  grid-gap: 20px;
+//   align-items: center;
+justify-content:space-evenly;
+      
 `
 
 const TileStyling = styled.div`
-  // border-radius: 10px;
-  background-color: lightblue;
   width: 300px;
   height: 300px;
 
 `
 
 const TileArea1 = styled.div `
-    grid-area: T1;
-    // display:flex;
-    // justify-content: center;
-    // align-items:center;
-
+//     grid-area: T1;
+      display:grid;
+      grid-column: 1/1;
 `
 const TileArea2 = styled.div `
-    grid-area: T2;
+//     grid-area: T2;
+display:grid;
+grid-column: 2/3;
+
 `
 const TileArea3 = styled.div `
-    grid-area: T3;
+display:grid;
+grid-column: 3/4;
 `
 const TileArea4 = styled.div `
-    grid-area: T4;
+display:grid;
+grid-column: 4/5;
 `
 

@@ -18,9 +18,8 @@ export const Tile1_T = (props: Props) => {
  
 const Tile1Styling = styled.img`
     border: solid black 2px;
-    border-radius: 20px;
+    border-radius: 50%;
     width:100%;
     height:auto;
-
 `
  
